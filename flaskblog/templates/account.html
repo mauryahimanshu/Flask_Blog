@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    Username = {{ current_user.username }}
+    Email = {{ current_user.email }}
+    Password = {{ current_user.password }}
+    Image = {{ current_user.image_file }}
+{% endblock content %}
