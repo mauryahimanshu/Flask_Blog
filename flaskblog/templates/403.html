@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<center>
+    <br><br>
+    <div>
+        <h1 style="color: orange;">ACCESS DENIED/FORBIDDEN</h1><br>
+        <h3>The page or resource you were trying to reach is absolutely forbidden.</h3><br>
+        <h2 style="color: red;">Error Code : <b>403</b> </h2>
+        <br><br><br>
+    </div>
+    
+    <a href="{{ url_for('index') }}", class="btn btn-outline-info mb-4 mr-1">Return to Home Page</a>
+</center>
+
+    
+{% endblock content %}

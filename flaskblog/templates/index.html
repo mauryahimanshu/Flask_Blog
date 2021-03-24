@@ -22,7 +22,7 @@
             <a href="{{ url_for('index', page=page_num) }}" class="btn btn-outline-info mb-4 mr-1">{{ page_num }}</a>
             {% endif %}
         {% else %}
-            ...
+            <b class="mr-1">...</b>
         {% endif %}
     {% endfor %}
 {% endblock content %}

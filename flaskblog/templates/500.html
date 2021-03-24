@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<center>
+    <br><br>
+    <div>
+        <h1 style="color: orange;">INTERNAL SERVER ERROR</h1><br>
+        <h3>We are working to solve the problem, sorry for the inconvenience.</h3><br>
+        <h2 style="color: red;">Error Code : <b>500</b> </h2>
+        <br><br><br>
+    </div>
+    
+    <a href="{{ url_for('index') }}", class="btn btn-outline-info mb-4 mr-1">Return to Home Page</a>
+</center>
+
+    
+{% endblock content %}

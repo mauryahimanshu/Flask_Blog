@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<center>
+    <br><br>
+    <div>
+        <h1 style="color: orange;">PAGE NOT FOUND</h1><br>
+        <h3>We can't seem to find the page you're looking for.</h3><br>
+        <h2 style="color: red;">Error Code : <b>404</b> </h2>
+        <br><br><br>
+    </div>
+    
+    <a href="{{ url_for('index') }}", class="btn btn-outline-info mb-4 mr-1">Return to Home Page</a>
+</center>
+
+    
+{% endblock content %}
