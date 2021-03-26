@@ -44,8 +44,7 @@ def login():
             login_user(user, remember=form.remember.data)
             next_page = request.args.get('next')
             if next_page:
-                formatted_next_page = next_page[1:]
-                return redirect(url_for(formatted_next_page))
+                return redirect(next_page)
             else:
                 return redirect(url_for('index'))
         else:
